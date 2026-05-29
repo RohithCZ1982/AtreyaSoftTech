@@ -121,12 +121,10 @@ p:last-child { margin-bottom: 0; }
 
 .logo strong { font-weight: 700; }
 
-.logo-icon {
-  font-size: 1.4rem;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
