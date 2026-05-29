@@ -189,100 +189,55 @@ p:last-child { margin-bottom: 0; }
 .stat-label { display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
 .stat-divider { width: 1px; height: 38px; background: var(--border); }
 
-/* ── Hero Visual — Node Diagram ── */
+/* Hero Visual */
 .hero-visual {
-  position: relative;
-  width: 100%; height: 500px;
-}
-
-/* SVG connector lines — full overlay */
-.hv-lines {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  pointer-events: none;
-  overflow: visible;
-}
-
-/* Central hub */
-.hv-center {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative; height: 480px;
   display: flex; align-items: center; justify-content: center;
-  z-index: 3;
 }
 
-.hv-ring {
-  position: absolute; border-radius: 50%; border: 1.5px dashed rgba(145,0,0,0.22);
+.central-orb {
+  position: relative; width: 140px; height: 140px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.co-core {
+  width: 88px; height: 88px;
+  background: var(--gradient); border-radius: 28px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.2rem;
+  box-shadow: 0 12px 40px rgba(145,0,0,0.45), 0 0 0 8px rgba(145,0,0,0.10);
+  z-index: 2; position: relative;
+  animation: bob 4s ease-in-out infinite;
+}
+@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+.co-ring {
+  position: absolute; border-radius: 50%; border: 1.5px dashed;
   animation: spin linear infinite;
 }
-.hv-ring-1 { width: 110px; height: 110px; animation-duration: 12s; }
-.hv-ring-2 { width: 160px; height: 160px; animation-duration: 20s; animation-direction: reverse; }
+.co-ring-1 { width: 160px; height: 160px; border-color: rgba(145,0,0,0.30); animation-duration: 10s; }
+.co-ring-2 { width: 240px; height: 240px; border-color: rgba(145,0,0,0.16); animation-duration: 16s; animation-direction: reverse; }
+.co-ring-3 { width: 320px; height: 320px; border-color: rgba(145,0,0,0.08); animation-duration: 24s; }
 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
-.hv-core {
-  width: 76px; height: 76px;
-  background: var(--gradient);
-  border-radius: 22px;
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 8px 32px rgba(145,0,0,0.45), 0 0 0 8px rgba(145,0,0,0.08);
-  animation: bob 4s ease-in-out infinite;
-  position: relative; z-index: 2;
+.visual-card {
+  position: absolute; background: #fff;
+  border: 1.5px solid var(--red-muted); border-radius: 16px;
+  padding: 14px 20px; display: flex; align-items: center; gap: 12px; white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(145,0,0,0.12), 0 1px 4px rgba(0,0,0,0.05);
+  animation: float 6s ease-in-out infinite;
 }
-.hv-logo { width: 46px; height: 46px; object-fit: contain; filter: brightness(0) invert(1); border-radius: 8px; }
-@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
 
-/* Nodes */
-.hv-node {
-  position: absolute;
-  background: #fff;
-  border: 1.5px solid var(--red-muted);
-  border-radius: 16px;
-  padding: 12px 16px;
-  display: flex; align-items: center; gap: 10px;
-  box-shadow: 0 4px 20px rgba(145,0,0,0.10), 0 1px 4px rgba(0,0,0,0.04);
-  white-space: nowrap;
-  z-index: 4;
-  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+.vc-icon { font-size: 1.4rem; }
+.vc-text { font-size: 0.85rem; font-weight: 700; color: var(--text); }
+.vc-pulse {
+  width: 8px; height: 8px; background: var(--red); border-radius: 50%;
+  box-shadow: 0 0 8px rgba(145,0,0,0.7); animation: pulse-dot 2s infinite;
 }
-.hv-node:hover { box-shadow: 0 8px 32px rgba(145,0,0,0.20); transform: translateY(-3px) scale(1.03); border-color: var(--red); }
-
-.hvn-icon { font-size: 1.3rem; flex-shrink: 0; }
-.hvn-title { font-size: 0.82rem; font-weight: 700; color: var(--text); line-height: 1.2; }
-.hvn-sub   { font-size: 0.7rem;  color: var(--text-muted); line-height: 1.2; }
-.hvn-dot {
-  width: 7px; height: 7px; border-radius: 50%;
-  background: var(--red); flex-shrink: 0;
-  box-shadow: 0 0 6px rgba(145,0,0,0.6);
-  animation: pulse-dot 2s infinite;
-}
-
-/* Node positions — clock-face layout around centre */
-.hv-n1 { top:  5%;  left:  2%;  animation: float1 5s ease-in-out infinite; }
-.hv-n2 { top:  5%;  right: 2%;  animation: float2 6s ease-in-out infinite; }
-.hv-n3 { top: 40%;  right: 0%;  animation: float1 7s ease-in-out infinite 1s; }
-.hv-n4 { bottom: 16%; left:  2%;  animation: float2 5.5s ease-in-out infinite 0.5s; }
-.hv-n5 { bottom: 5%;  left: 30%; animation: float1 6.5s ease-in-out infinite 1.5s; }
-
-@keyframes float1 { 0%,100% { transform: translateY(0);    } 50% { transform: translateY(-8px);  } }
-@keyframes float2 { 0%,100% { transform: translateY(0);    } 50% { transform: translateY( 8px);  } }
-
-/* ── Watermark Flow Diagrams ── */
-.wm {
-  position: absolute;
-  pointer-events: none;
-  opacity: 0.06;
-  z-index: 0;
-}
-.wm-hero {
-  width: 640px;
-  bottom: 0; right: -60px;
-}
-.wm-college {
-  width: 440px;
-  bottom: 20px; right: -30px;
-  opacity: 0.07;
-}
+.vc-1 { top: 50px; left: -10px; animation-delay: 0s; }
+.vc-2 { bottom: 70px; left: 0; animation-delay: 2s; }
+.vc-3 { top: 46%; right: -20px; transform: translateY(-50%); animation-delay: 4s; }
 
 /* ── About ── */
 .about { background: var(--bg2); }
