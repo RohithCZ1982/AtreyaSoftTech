@@ -65,18 +65,18 @@ document.getElementById('contactForm').addEventListener('submit', e => {
   }, 3500);
 });
 
-// Smooth active nav link highlighting
+// Active nav link highlighting
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a:not(.btn-nav)');
 
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(section => {
-    if (window.scrollY >= section.offsetTop - 120) {
+    if (window.scrollY >= section.offsetTop - 140) {
       current = section.getAttribute('id');
     }
   });
   navLinks.forEach(link => {
-    link.style.color = link.getAttribute('href') === `#${current}` ? '#fff' : '';
+    link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
   });
 }, { passive: true });
