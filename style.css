@@ -278,12 +278,6 @@ p:last-child { margin-bottom: 0; }
   width: 640px;
   bottom: 0; right: -60px;
 }
-.wm-services {
-  width: 560px;
-  top: 10px; left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.05;
-}
 .wm-college {
   width: 440px;
   bottom: 20px; right: -30px;
