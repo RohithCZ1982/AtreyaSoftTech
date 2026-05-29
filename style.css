@@ -34,6 +34,9 @@ p:last-child { margin-bottom: 0; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 .section { padding: 100px 0; }
 
+/* offset anchor jumps so headings clear the fixed Om bar + navbar */
+section[id] { scroll-margin-top: 100px; }
+
 .section-label {
   display: inline-block;
   font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
