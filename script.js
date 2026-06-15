@@ -90,19 +90,48 @@
 
   document.querySelectorAll('.stat-number[data-target]').forEach(el => counterObserver.observe(el));
 
-  /* ---- CONTACT FORM ---- */
+  /* ---- CONTACT FORM (Web3Forms) ---- */
   const form = document.getElementById('contactForm');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      btn.textContent = 'Message Sent!';
-      btn.style.background = '#7A9277';
-      setTimeout(() => {
-        btn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
-        btn.style.background = '';
-        form.reset();
-      }, 3000);
+      const btn = document.getElementById('submitBtn');
+      const note = document.getElementById('formNote');
+      const originalHTML = btn.innerHTML;
+
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        });
+        const data = await res.json();
+
+        if (data.success) {
+          btn.textContent = 'Message Sent!';
+          btn.style.background = 'var(--teal-deep)';
+          note.textContent = 'Thank you! We\'ll be in touch within one business day.';
+          note.style.color = 'var(--teal)';
+          form.reset();
+        } else {
+          throw new Error(data.message || 'Submission failed');
+        }
+      } catch (err) {
+        btn.textContent = 'Failed — Try Again';
+        btn.style.background = '#c0392b';
+        note.textContent = 'Something went wrong. Please email us directly.';
+      } finally {
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.innerHTML = originalHTML;
+          btn.style.background = '';
+          note.textContent = 'We typically respond within one business day.';
+          note.style.color = '';
+        }, 4000);
+      }
     });
   }
 
