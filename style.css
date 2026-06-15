@@ -1,38 +1,36 @@
 ﻿/* =============================================
    ATREYA SOFTTECH â€” Teal & Charcoal Theme
    ============================================= */
-
 :root {
-  --bg-white:    #FFFFFF;
-  --bg-off:      #F6F8F9;
-  --bg-subtle:   #EEF2F5;
-  --bg-dark:     #111827;
-  --bg-dark-mid: #1A2332;
-  --bg-dark-s:   #243042;
+  /* Grey & Red Theme */
+  --bg-white:    #F4F4F4;
+  --bg-off:      #EBEBEB;
+  --bg-subtle:   #E0E0E0;
 
-  /* Accent palette switched to user-provided beige */
-  --teal:        #DDBE9A; /* base beige */
-  --teal-deep:   #C49F78; /* deeper */
-  --teal-light:  #EADBC6; /* lighter */
-  --teal-pale:   #F7EFE8; /* very pale */
-  --teal-tint:   #FBF6F2; /* tint */
-  --teal-rgb:    221,190,154;
-  --teal-light-rgb: 234,219,198;
+  --bg-dark:     #1E1E1E;
+  --bg-dark-mid: #272727;
+  --bg-dark-s:   #333333;
 
-  --text-dark:   #111827;
-  --text-mid:    #374151;
-  --text-muted:  #6B7280;
-  --text-faint:  #9CA3AF;
-  --text-inv:    #F1F5F9;
-  --text-inv-sec:#94A3B8;
-  --text-inv-mut:#475569;
+  --teal:        #FF2D2D;
+  --teal-deep:   #D92020;
+  --teal-light:  #FF6B6B;
+  --teal-pale:   #FFBCBC;
+  --teal-tint:   #FFF2F2;
+  --teal-rgb:    255, 45, 45;
+
+  --text-dark:   #1A1A1A;
+  --text-mid:    #3D3D3D;
+  --text-muted:  #6B6B6B;
+  --text-faint:  #9A9A9A;
+  --text-inv:    #F5F5F5;
+  --text-inv-sec:#C8C8C8;
+  --text-inv-mut:#888888;
 
   --border-light: rgba(0,0,0,0.07);
-  --border-mid:   rgba(0,0,0,0.11);
+  --border-mid:   rgba(0,0,0,0.12);
   --border-dark:  rgba(255,255,255,0.07);
   --border-dark-h:rgba(255,255,255,0.14);
 
-  /* aliases so existing rules still compile */
   --green-deep:  var(--teal-deep);
   --green-mid:   var(--teal);
   --green-light: var(--teal-light);
@@ -516,12 +514,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--border-light);
-  border: 1px solid var(--border-light);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  gap: 16px;
 }
 
 .service-card {
@@ -529,7 +522,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: var(--bg-white);
   padding: 44px 40px;
   overflow: hidden;
-  transition: background 0.25s, box-shadow 0.25s, transform 0.25s;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  transition: background 0.25s, box-shadow 0.25s, transform 0.25s, border-color 0.25s;
   cursor: default;
   border-top: 2px solid transparent;
 }
@@ -540,8 +535,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: translateY(-2px);
   z-index: 1;
 }
-.service-card--large { background: var(--bg-subtle); }
-.service-card--large:hover { background: var(--teal-tint); }
+.service-card--large { background: var(--bg-white); }
+.service-card--large:hover { background: var(--bg-off); }
 .service-card--accent:hover .service-card-inner h3 { color: var(--teal); }
 
 /* Divider between grid and additional rows */

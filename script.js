@@ -154,33 +154,33 @@
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(W, H);
-    renderer.setClearColor(0x1A2133, 1);
+    renderer.setClearColor(0x1E1E1E, 1);
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(50, W / H, 0.1, 100);
     camera.position.z = 5.5;
 
     /* Soft lights */
-    scene.add(new THREE.AmbientLight(0xffffff, 0.5));
-    const ptA = new THREE.PointLight(0x0ABFBF, 3, 12);
+    scene.add(new THREE.AmbientLight(0xffffff, 0.4));
+    const ptA = new THREE.PointLight(0xFF2D2D, 3, 12);
     ptA.position.set(3, 2, 3);
     scene.add(ptA);
-    const ptB = new THREE.PointLight(0xB2EDED, 2, 10);
+    const ptB = new THREE.PointLight(0xFF9999, 1.5, 10);
     ptB.position.set(-3, -1, 2);
     scene.add(ptB);
 
     /* Tech node labels */
     const techs = [
-      { name: 'Python',     color: 0x0ABFBF, pos: [0, 0, 0],        size: 0.22 },
-      { name: 'React',      color: 0x4DD9D9, pos: [-1.6, 1.0, 0.3],  size: 0.16 },
-      { name: 'Node.js',    color: 0x078A8A, pos: [1.7, 0.8, -0.2],  size: 0.16 },
-      { name: 'AWS',        color: 0xB2EDED, pos: [1.5, -1.2, 0.5],  size: 0.15 },
-      { name: 'Angular',    color: 0x056060, pos: [-1.8, -0.8, 0],   size: 0.14 },
-      { name: 'Docker',     color: 0x2EC9C9, pos: [0.5, 1.9, -0.3],  size: 0.13 },
-      { name: 'Kubernetes', color: 0x17A0A0, pos: [-0.6, -1.8, 0.4], size: 0.12 },
-      { name: 'PostgreSQL', color: 0x5EDEDE, pos: [2.2, 0.1, 0.6],   size: 0.12 },
-      { name: 'Azure',      color: 0x3DCFCF, pos: [-2.2, 0.2, -0.4], size: 0.12 },
-      { name: 'OpenAI',     color: 0x90E8E8, pos: [0, -2.1, 0.3],    size: 0.13 },
+      { name: 'Python',     color: 0xFF2D2D, pos: [0, 0, 0],        size: 0.22 },
+      { name: 'React',      color: 0xFF6B6B, pos: [-1.6, 1.0, 0.3],  size: 0.16 },
+      { name: 'Node.js',    color: 0xD92020, pos: [1.7, 0.8, -0.2],  size: 0.16 },
+      { name: 'AWS',        color: 0xFFBCBC, pos: [1.5, -1.2, 0.5],  size: 0.15 },
+      { name: 'Angular',    color: 0xA01818, pos: [-1.8, -0.8, 0],   size: 0.14 },
+      { name: 'Docker',     color: 0xFF4F4F, pos: [0.5, 1.9, -0.3],  size: 0.13 },
+      { name: 'Kubernetes', color: 0xCC2222, pos: [-0.6, -1.8, 0.4], size: 0.12 },
+      { name: 'PostgreSQL', color: 0xFF8888, pos: [2.2, 0.1, 0.6],   size: 0.12 },
+      { name: 'Azure',      color: 0xE03535, pos: [-2.2, 0.2, -0.4], size: 0.12 },
+      { name: 'OpenAI',     color: 0xFFAAAA, pos: [0, -2.1, 0.3],    size: 0.13 },
     ];
 
     const group = new THREE.Group();
@@ -208,9 +208,9 @@
       const points = [center, new THREE.Vector3(...t.pos)];
       const geo = new THREE.BufferGeometry().setFromPoints(points);
       const line = new THREE.Line(geo, new THREE.LineBasicMaterial({
-        color: 0x0D4040,
+        color: 0x4A1A1A,
         transparent: true,
-        opacity: 0.4,
+        opacity: 0.5,
       }));
       group.add(line);
     });
@@ -220,9 +220,9 @@
       const radius = 1.0 + i * 0.7;
       const tor = new THREE.TorusGeometry(radius, 0.008, 6, 80);
       const torMesh = new THREE.Mesh(tor, new THREE.MeshBasicMaterial({
-        color: 0x0D4040,
+        color: 0x4A1A1A,
         transparent: true,
-        opacity: 0.25,
+        opacity: 0.3,
       }));
       torMesh.rotation.x = Math.PI / 2 + (i * 0.3);
       torMesh.rotation.y = i * 0.5;
