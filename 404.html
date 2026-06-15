@@ -3,51 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 — Atreya Soft-Tech</title>
+  <title>404 — Atreya SoftTech</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --copper: #C67B5C; --ivory: #F5F1EA; --text-sec: #8A9BB0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Inter', sans-serif;
-      background: #080b14;
-      color: #e2e8f0;
       min-height: 100vh;
+      background: #0D1117;
+      color: var(--ivory);
+      font-family: 'Inter', sans-serif;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 24px;
+      padding: 40px 20px;
     }
-    .code {
+    .wrap { max-width: 480px; }
+    .num {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 8rem;
       font-weight: 700;
-      background: linear-gradient(135deg, #6c63ff, #00d4ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      letter-spacing: -0.06em;
+      color: rgba(255,255,255,0.05);
       line-height: 1;
       margin-bottom: 16px;
     }
-    h1 { font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; margin-bottom: 12px; }
-    p { color: #94a3b8; margin-bottom: 32px; }
-    a {
-      display: inline-block;
-      background: linear-gradient(135deg, #6c63ff, #00d4ff);
-      color: #fff;
-      padding: 13px 30px;
-      border-radius: 100px;
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
       font-weight: 600;
-      text-decoration: none;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
     }
+    p { color: var(--text-sec); font-size: 0.92rem; line-height: 1.7; margin-bottom: 36px; }
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: var(--copper);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    a:hover { background: #d4886a; }
   </style>
 </head>
 <body>
-  <div class="code">404</div>
-  <h1>Page Not Found</h1>
-  <p>The page you're looking for doesn't exist or has been moved.</p>
-  <a href="/">Back to Home</a>
+  <div class="wrap">
+    <div class="num">404</div>
+    <h1>Page not found</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <a href="/">Back to Home</a>
+  </div>
 </body>
 </html>

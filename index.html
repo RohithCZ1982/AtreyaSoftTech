@@ -3,555 +3,553 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atreya Soft-Tech | AI-Powered Custom Software Solutions</title>
-  <meta name="description" content="Atreya Soft-Tech — Revolutionizing the way you work with AI-powered custom software solutions. Based in Mysuru, India." />
+  <meta name="description" content="Atreya SoftTech — Custom software development, AI solutions, and digital platforms for ambitious businesses. Based in Mysore, India." />
+  <meta name="keywords" content="software development, AI solutions, web applications, mobile apps, cloud engineering, Mysore, India" />
+  <meta property="og:title" content="Atreya SoftTech — Intelligent Software for Ambitious Businesses" />
+  <meta property="og:description" content="Custom applications, AI-powered solutions, and digital platforms that help organizations scale with confidence." />
+  <meta property="og:type" content="website" />
+  <title>Atreya SoftTech — Intelligent Software for Ambitious Businesses</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#" class="logo">
-        <img src="logo.avif" alt="Atreya Soft-Tech" class="logo-img" />
-        <span class="logo-text">Atreya <strong>Soft Tech</strong></span>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="nav-logo-text">Atreya SoftTech</span>
+      </a>
+      <a href="#home" class="nav-ohm" aria-label="Home">
+        <img src="ohm-symbol-isolated-on-a-white-background-vector.jpg" alt="Ω" class="ohm-img" />
       </a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#agentic">Agentic AI</a></li>
-        <li><a href="#college">College Projects</a></li>
-        <li><a href="#contact" class="btn-nav"><span class="btn-nav-icon">✉</span>Contact Us</a></li>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#solutions" class="nav-link">Solutions</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <a href="#contact" class="nav-cta">
+        <span>Contact Us</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
+    <div class="nav-mobile" id="navMobile">
+      <ul>
+        <li><a href="#home" class="nav-mobile-link">Home</a></li>
+        <li><a href="#services" class="nav-mobile-link">Services</a></li>
+        <li><a href="#solutions" class="nav-mobile-link">Solutions</a></li>
+        <li><a href="#about" class="nav-mobile-link">About</a></li>
+        <li><a href="#contact" class="nav-mobile-link">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#about" class="mobile-link">About</a>
-    <a href="#services" class="mobile-link">Services</a>
-    <a href="#agentic" class="mobile-link">Agentic AI</a>
-    <a href="#college" class="mobile-link">College Projects</a>
-    <a href="#contact" class="mobile-link">Contact Us</a>
-  </div>
-
-  <!-- OM SYMBOL -->
-  <div class="om-bar">
-    <span class="om-symbol">ॐ</span>
-  </div>
-
-  <!-- HERO -->
-  <section class="hero">
+  <!-- Hero Section -->
+  <section class="hero" id="home">
     <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Founded 2023 · Mysuru, India
-      </div>
-      <h1 class="hero-title">
-        <span class="gradient-text">Evolution</span><br />
-        Made Easy
-      </h1>
-      <p class="hero-sub">
-        We build AI-powered and agentic software that transforms how businesses operate — from startups to enterprises, one intelligent solution at a time.
-      </p>
-      <div class="hero-cta">
-        <a href="#contact" class="btn-primary">Start a Project</a>
-        <a href="#services" class="btn-ghost">Explore Services</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">AI</span>
-          <span class="stat-label">First Approach</span>
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Mysore · India · Global</span>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">Global</span>
-          <span class="stat-label">Client Reach</span>
+        <h1 class="hero-headline">
+          Building<br />
+          <em>Intelligent</em><br />
+          Software for<br />
+          Ambitious<br />
+          Businesses.
+        </h1>
+        <p class="hero-sub">
+          Atreya SoftTech crafts custom applications, AI-powered solutions, and digital platforms that help organizations scale with confidence.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Start a Project</a>
+          <a href="#services" class="btn-ghost">
+            View Our Work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">100%</span>
-          <span class="stat-label">Custom Solutions</span>
+        <div class="hero-metrics">
+          <div class="hero-metric-divider"></div>
+          <div class="hero-metric">
+            <span class="hero-metric-num">15+</span>
+            <span class="hero-metric-label">Technologies</span>
+          </div>
+          <div class="hero-metric-divider"></div>
+          <div class="hero-metric">
+            <span class="hero-metric-num">7+</span>
+            <span class="hero-metric-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-img-wrap">
+          <img
+            src="hero.jpg"
+            alt="Atreya SoftTech"
+            class="hero-img"
+          />
+          <div class="hero-img-badge">
+            <span class="hero-img-badge-dot"></span>
+            <span>Crafting digital excellence</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="visual-card vc-1">
-        <div class="vc-icon">🤖</div>
-        <div class="vc-text">Agentic AI</div>
-        <div class="vc-pulse"></div>
-      </div>
-      <div class="visual-card vc-2">
-        <div class="vc-icon">⚡</div>
-        <div class="vc-text">Rapid Delivery</div>
-        <div class="vc-pulse"></div>
-      </div>
-      <div class="visual-card vc-3">
-        <div class="vc-icon">🔒</div>
-        <div class="vc-text">Secure & Scalable</div>
-        <div class="vc-pulse"></div>
-      </div>
-      <div class="central-orb">
-        <div class="co-ring co-ring-1"></div>
-        <div class="co-ring co-ring-2"></div>
-        <div class="co-ring co-ring-3"></div>
-        <div class="co-core">🧠</div>
-      </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="section-label">About Us</div>
-      <div class="about-grid">
-        <div class="about-text">
-          <h2 class="section-title">True Empowerment Through Technology</h2>
-          <p>Atreya Soft-Tech is an Indian software company built on the belief that technology should work for people — not the other way around. Founded in 2023 and headquartered in Mysuru, Karnataka, we bring together a team of technology veterans united by a single mission.</p>
-          <p>We craft intuitive, scalable, and cost-effective software solutions tailored to each client's unique needs — from early-stage startups to large corporations across the globe. Our expertise spans custom software, AI integration, and emerging agentic systems.</p>
-          <div class="about-tags">
-            <span class="tag">Experienced Team</span>
-            <span class="tag">Agile Process</span>
-            <span class="tag">Client-Centric</span>
-            <span class="tag">AI-Driven</span>
-            <span class="tag">Agentic Systems</span>
-          </div>
-        </div>
-        <div class="about-cards">
-          <div class="a-card">
-            <div class="a-icon">🌍</div>
-            <h3>Worldwide Reach</h3>
-            <p>Delivering software projects and support to clients across the globe from our base in Mysuru, India.</p>
-          </div>
-          <div class="a-card">
-            <div class="a-icon">🧠</div>
-            <h3>AI-First Mindset</h3>
-            <p>Every solution we build leverages the latest advances in AI, LLMs, and autonomous agent technology.</p>
-          </div>
-          <div class="a-card">
-            <div class="a-icon">🛡️</div>
-            <h3>Quality Assured</h3>
-            <p>Dedicated testing professionals ensure every product is production-ready, robust, and reliable.</p>
-          </div>
-          <div class="a-card">
-            <div class="a-icon">🎓</div>
-            <h3>Student Support</h3>
-            <p>We guide college students through AI and software projects, bridging academia and industry.</p>
-          </div>
-        </div>
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="services-container">
+      <div class="section-header">
+        <div class="section-tag">What We Build</div>
+        <h2 class="section-title">Services built for<br /><em>enterprise ambition</em></h2>
+        <p class="section-desc">We don't build websites. We architect digital systems that grow with your business, powered by modern engineering and intelligent design.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- SERVICES -->
-  <section class="services section" id="services">
-    <div class="container">
-      <div class="section-label centered">What We Do</div>
-      <h2 class="section-title centered">Services Built for the AI Era</h2>
-      <p class="section-sub">From ideation to deployment, we handle the full lifecycle of software development powered by cutting-edge AI and agentic technology.</p>
       <div class="services-grid">
-        <div class="service-card">
-          <div class="sc-number">01</div>
-          <div class="sc-icon">🤖</div>
-          <h3>Agentic AI Development</h3>
-          <p>Build autonomous AI agents that plan, reason, and act — from single-task bots to multi-agent orchestration systems.</p>
-          <div class="sc-tags"><span>LLM Agents</span><span>Multi-Agent</span><span>RAG</span></div>
+        <div class="service-card service-card--large" data-service="01">
+          <div class="service-card-inner">
+            <div class="service-num">01</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Custom Applications</h3>
+            <p>Bespoke software engineered for your specific workflows — from internal tools to customer-facing platforms that scale beyond expectation.</p>
+            <div class="service-tags">
+              <span>SaaS</span><span>Enterprise</span><span>Internal Tools</span>
+            </div>
+          </div>
+          <div class="service-card-glow"></div>
         </div>
-        <div class="service-card featured">
-          <div class="sc-number">02</div>
-          <div class="sc-icon">💻</div>
-          <h3>Custom Software Design</h3>
-          <p>Bespoke software designed from scratch around your business processes, workflows, and user needs.</p>
-          <div class="sc-tags"><span>Web Apps</span><span>Mobile Apps</span><span>Desktop Apps</span></div>
+
+        <div class="service-card" data-service="02">
+          <div class="service-card-inner">
+            <div class="service-num">02</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Web Platforms</h3>
+            <p>High-performance web applications built with modern frameworks, optimized for speed, accessibility, and conversion.</p>
+            <div class="service-tags">
+              <span>React</span><span>Next.js</span><span>Angular</span>
+            </div>
+          </div>
+          <div class="service-card-glow"></div>
         </div>
-        <div class="service-card">
-          <div class="sc-number">03</div>
-          <div class="sc-icon">🧪</div>
-          <h3>Quality Assurance & Testing</h3>
-          <p>Rigorous manual and automated testing pipelines to ensure your software performs flawlessly at every scale.</p>
-          <div class="sc-tags"><span>Manual QA</span><span>Automation</span><span>Performance</span></div>
+
+        <div class="service-card" data-service="03">
+          <div class="service-card-inner">
+            <div class="service-num">03</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3>Mobile Apps</h3>
+            <p>Native and cross-platform mobile experiences crafted for intuitive usability and high retention across iOS and Android.</p>
+            <div class="service-tags">
+              <span>iOS</span><span>Android</span><span>React Native</span>
+            </div>
+          </div>
+          <div class="service-card-glow"></div>
         </div>
-        <div class="service-card">
-          <div class="sc-number">04</div>
-          <div class="sc-icon">☁️</div>
-          <h3>Cloud & Infrastructure</h3>
-          <p>Scalable cloud architecture, deployment pipelines, and DevOps support to keep your software always on.</p>
-          <div class="sc-tags"><span>AWS</span><span>Azure</span><span>Docker</span></div>
+
+        <div class="service-card service-card--accent" data-service="04">
+          <div class="service-card-inner">
+            <div class="service-num">04</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>AI & Automation</h3>
+            <p>Machine learning models, intelligent automation pipelines, and AI-native features that transform operational efficiency.</p>
+            <div class="service-tags">
+              <span>LLM Integration</span><span>MLOps</span><span>Automation</span>
+            </div>
+          </div>
+          <div class="service-card-glow"></div>
         </div>
-        <div class="service-card">
-          <div class="sc-number">05</div>
-          <div class="sc-icon">🔗</div>
-          <h3>System Integration</h3>
-          <p>Connecting your existing tools, APIs, and data sources into a unified, efficient technology ecosystem.</p>
-          <div class="sc-tags"><span>API Development</span><span>Microservices</span><span>ETL</span></div>
+
+        <div class="service-card" data-service="05">
+          <div class="service-card-inner">
+            <div class="service-num">05</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3>Cloud Engineering</h3>
+            <p>Architecture, migration, and optimization on AWS, Azure, and GCP. Infrastructure as code. DevOps at enterprise scale.</p>
+            <div class="service-tags">
+              <span>AWS</span><span>Azure</span><span>Kubernetes</span>
+            </div>
+          </div>
+          <div class="service-card-glow"></div>
         </div>
-        <div class="service-card">
-          <div class="sc-number">06</div>
-          <div class="sc-icon">📊</div>
-          <h3>Consulting & Strategy</h3>
-          <p>Expert technology consulting to help you pick the right stack, architecture, and AI roadmap for your goals.</p>
-          <div class="sc-tags"><span>Tech Audit</span><span>Roadmapping</span><span>AI Strategy</span></div>
+
+        <div class="service-card" data-service="06">
+          <div class="service-card-inner">
+            <div class="service-num">06</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+            </div>
+            <h3>Enterprise Solutions</h3>
+            <p>ERP systems, supply chain platforms, and mission-critical software built to handle complexity at organizational scale.</p>
+            <div class="service-tags">
+              <span>ERP</span><span>CRM</span><span>Integration</span>
+            </div>
+          </div>
+          <div class="service-card-glow"></div>
+        </div>
+      </div>
+
+      <div class="services-divider">
+        <div class="services-divider-line"></div>
+        <span class="services-divider-label">Specialized Services</span>
+        <div class="services-divider-line"></div>
+      </div>
+
+      <div class="services-additional">
+        <div class="service-row">
+          <div class="service-row-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div>
+            <h4>UI/UX Design</h4>
+            <p>Design systems, interaction design, and interface architecture that converts visitors into loyal users.</p>
+          </div>
+          <svg class="service-row-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="service-row">
+          <div class="service-row-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></svg>
+          </div>
+          <div>
+            <h4>Technology Consulting</h4>
+            <p>Strategic guidance on technology stack, digital transformation roadmaps, and architecture decisions.</p>
+          </div>
+          <svg class="service-row-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- AGENTIC AI -->
-  <section class="agentic section" id="agentic">
-    <div class="container">
-      <div class="section-label">Next-Gen Technology</div>
-      <div class="agentic-hero">
-        <div class="agentic-text">
-          <h2 class="section-title" style="color:#fff;">We Build With <span class="gradient-text">Agentic AI</span></h2>
-          <p>Agentic AI represents the next frontier — software that doesn't just respond to prompts but autonomously plans, reasons, uses tools, and achieves goals. At Atreya Soft-Tech, we are at the forefront of this revolution.</p>
-          <p>Unlike traditional AI that waits for instructions, agentic systems can break down complex tasks, make decisions, call APIs, write and run code, browse the web, and coordinate with other agents — all to accomplish your business objective.</p>
-          <p>We design and deploy these systems for real-world business problems: from intelligent customer service pipelines to fully automated data research workflows.</p>
-          <a href="#contact" class="btn-primary" style="margin-top:8px;">Build an AI Agent →</a>
+  <!-- Why Choose Us -->
+  <section class="why" id="solutions">
+    <div class="why-container">
+      <div class="why-left">
+        <div class="section-tag">Why Atreya</div>
+        <h2 class="section-title why-title">The numbers speak.<br />The work confirms.</h2>
+        <p class="section-desc">We operate at the intersection of engineering precision and design intelligence. Every project is a long-term partnership, not a transaction.</p>
+        <a href="#about" class="btn-outline">Our Story
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="why-right">
+        <div class="stat-row">
+          <div class="stat-block stat-block--small">
+            <div class="stat-number" data-target="15">0</div>
+            <div class="stat-symbol">+</div>
+            <div class="stat-label">Technologies Mastered</div>
+          </div>
+          <div class="stat-block stat-block--small stat-block--accent">
+            <div class="stat-number">100</div>
+            <div class="stat-symbol">%</div>
+            <div class="stat-label">Client Focused</div>
+          </div>
         </div>
-        <div class="agentic-visual">
-          <div class="agent-node">
-            <div class="an-badge">Orchestrator</div>
-            <div class="an-icon">🧠</div>
-            <div class="an-title">Planner Agent</div>
-            <p class="an-desc">Breaks goals into sub-tasks and delegates to specialist agents</p>
-          </div>
-          <div class="agent-node">
-            <div class="an-badge">Specialist</div>
-            <div class="an-icon">🔍</div>
-            <div class="an-title">Research Agent</div>
-            <p class="an-desc">Searches the web, reads documents, and synthesises findings</p>
-          </div>
-          <div class="agent-node">
-            <div class="an-badge">Specialist</div>
-            <div class="an-icon">💾</div>
-            <div class="an-title">Data Agent</div>
-            <p class="an-desc">Queries databases, runs analytics, and surfaces insights</p>
-          </div>
-          <div class="agent-node">
-            <div class="an-badge">Specialist</div>
-            <div class="an-icon">📧</div>
-            <div class="an-title">Action Agent</div>
-            <p class="an-desc">Executes tasks — sends emails, updates CRMs, triggers workflows</p>
-          </div>
         </div>
       </div>
+    </div>
+    <div class="why-pillars">
+      <div class="pillar">
+        <div class="pillar-line"></div>
+        <h4>Engineering First</h4>
+        <p>Architecture decisions that age well, not fast shortcuts that create debt.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-line"></div>
+        <h4>Design Thoughtful</h4>
+        <p>User experience is never an afterthought — it's baked into every sprint.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-line"></div>
+        <h4>Partnership Minded</h4>
+        <p>We're invested in your success long after the deployment is done.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-line"></div>
+        <h4>Globally Capable</h4>
+        <p>Mysore roots, global execution — time zones and borders don't slow us down.</p>
+      </div>
+    </div>
+  </section>
 
-      <div class="agentic-features">
-        <div class="af-card">
-          <div class="af-icon">🔄</div>
-          <h3>Multi-Agent Orchestration</h3>
-          <p>Deploy networks of specialised AI agents that collaborate, share context, and divide complex work — far beyond what a single model can achieve.</p>
-        </div>
-        <div class="af-card">
-          <div class="af-icon">🛠️</div>
-          <h3>Tool-Use & Function Calling</h3>
-          <p>Agents equipped with real-world tools: web search, code execution, database access, API calls, file management, and custom business tools.</p>
-        </div>
-        <div class="af-card">
-          <div class="af-icon">🧩</div>
-          <h3>RAG & Knowledge Bases</h3>
-          <p>Retrieval-Augmented Generation connects your agents to your private documents, product data, and institutional knowledge for accurate, grounded responses.</p>
-        </div>
-        <div class="af-card">
-          <div class="af-icon">🔁</div>
-          <h3>Autonomous Workflows</h3>
-          <p>End-to-end automation pipelines that run 24/7 — ingesting data, making decisions, and taking actions without human intervention for routine processes.</p>
-        </div>
-        <div class="af-card">
-          <div class="af-icon">🧪</div>
-          <h3>LLM Fine-Tuning</h3>
-          <p>Custom-train language models on your domain data to create AI that speaks your industry's language with precision and deep context-awareness.</p>
-        </div>
-        <div class="af-card">
-          <div class="af-icon">🔐</div>
-          <h3>Safe & Controllable AI</h3>
-          <p>Every agentic system we build includes guardrails, human-in-the-loop checkpoints, audit trails, and rollback mechanisms for enterprise-grade safety.</p>
+  <!-- Technology Stack -->
+  <section class="tech" id="tech">
+    <div class="tech-container">
+      <div class="section-header">
+        <div class="section-tag">Technology</div>
+        <h2 class="section-title">The stack behind<br /><em>everything we build</em></h2>
+        <p class="section-desc">Battle-tested technologies selected for longevity, performance, and the teams who'll maintain the code long after we've shipped.</p>
+      </div>
+      <div class="tech-canvas-wrap">
+        <canvas id="techCanvas"></canvas>
+        <div class="tech-list">
+          <div class="tech-category">
+            <h4>Languages & Frameworks</h4>
+            <div class="tech-items">
+              <div class="tech-item" data-tech="python">Python</div>
+              <div class="tech-item" data-tech="node">Node.js</div>
+              <div class="tech-item" data-tech="react">React</div>
+              <div class="tech-item" data-tech="angular">Angular</div>
+              <div class="tech-item" data-tech="typescript">TypeScript</div>
+            </div>
+          </div>
+          <div class="tech-category">
+            <h4>Infrastructure & Cloud</h4>
+            <div class="tech-items">
+              <div class="tech-item" data-tech="aws">AWS</div>
+              <div class="tech-item" data-tech="azure">Azure</div>
+              <div class="tech-item" data-tech="docker">Docker</div>
+              <div class="tech-item" data-tech="k8s">Kubernetes</div>
+            </div>
+          </div>
+          <div class="tech-category">
+            <h4>Data & AI</h4>
+            <div class="tech-items">
+              <div class="tech-item" data-tech="postgres">PostgreSQL</div>
+              <div class="tech-item" data-tech="openai">OpenAI</div>
+              <div class="tech-item" data-tech="redis">Redis</div>
+              <div class="tech-item" data-tech="kafka">Kafka</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- COLLEGE PROJECT GUIDANCE -->
-  <section class="college section" id="college">
-    <div class="container">
-      <div class="section-label centered">Student Programs</div>
-      <h2 class="section-title centered">College Project Guidance</h2>
-      <p class="section-sub">We mentor students from ideation to implementation — helping build final-year and mini projects that stand out with real-world AI and software engineering practices.</p>
-
-      <div class="college-intro">
-        <div class="college-text">
-          <h2 class="section-title">Bridge the Gap Between Classroom and Industry</h2>
-          <p>Most college projects never go beyond a PowerPoint. We change that. Our engineers and AI specialists work directly with students to build projects that are technically sound, well-documented, and genuinely impressive to evaluators and future employers.</p>
-          <p>Whether it's your final-year project, a semester mini-project, or a research prototype, we help you go from an idea to a working, deployable product — with mentoring at every step.</p>
-          <div class="about-tags" style="margin-top:20px;">
-            <span class="tag">Final Year Projects</span>
-            <span class="tag">Mini Projects</span>
-            <span class="tag">Research Prototypes</span>
-            <span class="tag">IEEE Papers</span>
-            <span class="tag">Internship Support</span>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-left">
+        <div class="section-tag">Our Story</div>
+        <h2 class="section-title about-title">Built in Mysore.<br />Deployed <em>worldwide.</em></h2>
+        <p class="about-text">
+          Founded in the cultural capital of Karnataka, Atreya SoftTech was born from a belief that world-class software doesn't need to come from Silicon Valley. It needs to come from engineers who care deeply about their craft.
+        </p>
+        <p class="about-text">
+          We combine the discipline of enterprise engineering with the agility of a product studio. Our team brings together specialists in cloud architecture, machine learning, design systems, and domain-specific business logic — all working in close partnership with our clients.
+        </p>
+        <p class="about-text">
+          Every engagement starts with listening. We spend time understanding your industry, your constraints, and your ambitions before writing a single line of code.
+        </p>
+        <div class="about-values">
+          <div class="about-value">
+            <div class="about-value-line" style="--c: var(--copper)"></div>
+            <span>Engineering Excellence</span>
           </div>
-        </div>
-        <div class="college-highlight">
-          <h3>🎯 What You Get</h3>
-          <p>✅ One-on-one mentorship sessions with industry engineers<br/>
-          ✅ Complete project planning and architecture guidance<br/>
-          ✅ Hands-on coding support and code reviews<br/>
-          ✅ AI/ML integration into your project<br/>
-          ✅ Documentation, PPT, and report writing help<br/>
-          ✅ Viva preparation and presentation coaching<br/>
-          ✅ Deployed, working demo you can show employers<br/>
-          ✅ Certificate of completion from Atreya Soft-Tech</p>
-        </div>
-      </div>
-
-      <div class="college-domains">
-        <div class="domain-card">
-          <div class="domain-icon">🤖</div>
-          <h3>AI & Machine Learning</h3>
-          <p>Predictive models, image recognition, NLP chatbots, recommendation systems, and agentic AI projects.</p>
-        </div>
-        <div class="domain-card">
-          <div class="domain-icon">🌐</div>
-          <h3>Web & Mobile Apps</h3>
-          <p>Full-stack web apps, Android/iOS applications, PWAs, and e-commerce platforms with modern tech stacks.</p>
-        </div>
-        <div class="domain-card">
-          <div class="domain-icon">🔒</div>
-          <h3>Cybersecurity</h3>
-          <p>Intrusion detection systems, vulnerability scanners, secure coding projects, and blockchain applications.</p>
-        </div>
-        <div class="domain-card">
-          <div class="domain-icon">📊</div>
-          <h3>Data Science</h3>
-          <p>Data analysis dashboards, business intelligence tools, data pipelines, and visualisation projects.</p>
-        </div>
-        <div class="domain-card">
-          <div class="domain-icon">☁️</div>
-          <h3>Cloud & IoT</h3>
-          <p>Smart device systems, cloud-connected sensors, edge computing, and home automation projects.</p>
-        </div>
-        <div class="domain-card">
-          <div class="domain-icon">🏥</div>
-          <h3>Healthcare Tech</h3>
-          <p>Patient management systems, medical image analysis, health monitoring apps, and telemedicine platforms.</p>
-        </div>
-        <div class="domain-card">
-          <div class="domain-icon">🎓</div>
-          <h3>EdTech Solutions</h3>
-          <p>AI tutoring systems, adaptive learning platforms, attendance automation, and exam management tools.</p>
-        </div>
-        <div class="domain-card">
-          <div class="domain-icon">🌾</div>
-          <h3>AgriTech & Social Impact</h3>
-          <p>Crop prediction, precision farming tools, rural fintech apps, and social welfare management systems.</p>
-        </div>
-      </div>
-
-      <div class="college-process">
-        <h2>How It Works</h2>
-        <div class="process-steps">
-          <div class="step">
-            <div class="step-num">1</div>
-            <h4>Share Your Idea</h4>
-            <p>Tell us your topic, domain, and college requirements via our contact form.</p>
+          <div class="about-value">
+            <div class="about-value-line" style="--c: var(--gold)"></div>
+            <span>Long-term Partnerships</span>
           </div>
-          <div class="step">
-            <div class="step-num">2</div>
-            <h4>Free Consultation</h4>
-            <p>A free 30-min call with our engineer to assess scope and suggest improvements.</p>
-          </div>
-          <div class="step">
-            <div class="step-num">3</div>
-            <h4>Project Planning</h4>
-            <p>We create a roadmap, tech stack recommendation, and milestone schedule.</p>
-          </div>
-          <div class="step">
-            <div class="step-num">4</div>
-            <h4>Build & Mentor</h4>
-            <p>Weekly sessions to guide, review code, and keep you on track to completion.</p>
-          </div>
-          <div class="step">
-            <div class="step-num">5</div>
-            <h4>Present & Deploy</h4>
-            <p>Final polish, viva prep, demo deployment, and documentation handoff.</p>
+          <div class="about-value">
+            <div class="about-value-line" style="--c: var(--sage)"></div>
+            <span>Global Mindset</span>
           </div>
         </div>
       </div>
-
-      <div class="college-cta">
-        <h3>Ready to Build Something Impressive?</h3>
-        <p>Join students from across Karnataka who have built standout final-year projects with Atreya Soft-Tech's guidance. Your idea + our expertise = a project that gets noticed.</p>
-        <a href="#contact" class="btn-white">Get Free Consultation →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY US -->
-  <section class="why-us section" id="why-us">
-    <div class="container">
-      <div class="section-label centered">Why Atreya Soft-Tech</div>
-      <h2 class="section-title centered">Revolutionizing the Way You Work</h2>
-      <p class="section-sub" style="margin-bottom:56px;">Six reasons clients and students keep choosing us.</p>
-      <div class="why-grid">
-        <div class="why-feature">
-          <div class="wf-bar"></div>
-          <h3>Agentic AI Expertise</h3>
-          <p>We don't just build AI features — we design autonomous systems that plan, act, and deliver real outcomes without constant human supervision.</p>
-        </div>
-        <div class="why-feature">
-          <div class="wf-bar"></div>
-          <h3>Veteran Team</h3>
-          <p>Engineers, designers, and QA specialists with deep experience across enterprise software and cutting-edge AI research.</p>
-        </div>
-        <div class="why-feature">
-          <div class="wf-bar"></div>
-          <h3>Scalable Architecture</h3>
-          <p>We design software that grows with your business — from your first user to your millionth, without costly rewrites.</p>
-        </div>
-        <div class="why-feature">
-          <div class="wf-bar"></div>
-          <h3>Cost-Effective</h3>
-          <p>Enterprise-grade quality at startup-friendly pricing. We optimise for value at every stage of the project.</p>
-        </div>
-        <div class="why-feature">
-          <div class="wf-bar"></div>
-          <h3>Student-Friendly</h3>
-          <p>Dedicated programs for college students that make professional-grade project guidance accessible and affordable.</p>
-        </div>
-        <div class="why-feature">
-          <div class="wf-bar"></div>
-          <h3>End-to-End Delivery</h3>
-          <p>From concept through deployment and maintenance, we're your long-term technology partner — not just a one-off vendor.</p>
+      <div class="about-right">
+        <div class="about-visual">
+          <div class="about-card about-card--1">
+            <div class="about-card-label">Headquarters</div>
+            <div class="about-card-value">Mysore, Karnataka</div>
+            <div class="about-card-sub">India 570001</div>
+          </div>
+          <div class="about-card about-card--2">
+            <div class="about-card-label">Founded</div>
+            <div class="about-card-value">2023</div>
+            <div class="about-card-sub">3 years of engineering</div>
+          </div>
+          <div class="about-card about-card--3">
+            <div class="about-card-label">Team</div>
+            <div class="about-card-value">5+ Engineers</div>
+            <div class="about-card-sub">Designers · Architects · Specialists</div>
+          </div>
+          <div class="about-orb"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <div class="section-label centered">Get In Touch</div>
-      <h2 class="section-title centered">Let's Build Something Great</h2>
-      <p class="section-sub">Whether you're a business looking for AI-powered software or a student needing project guidance — we'd love to hear from you.</p>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="ci-item">
-            <div class="ci-icon">📍</div>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-left">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="contact-headline">Let's Build Something<br /><em>Meaningful</em> Together.</h2>
+        <p class="contact-desc">Whether you have a clear vision or just a problem to solve — we'd love to hear from you. Most projects start with a conversation.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
             <div>
-              <h4>Office Address</h4>
-              <p>#322, 11th Main, 1st Stage<br />Brindavan Extension<br />Mysuru – 570020, Karnataka, India</p>
+              <strong>Office</strong>
+              <span>322, 11th Main, 1st Stage, Brindavan Extension, Mysore 570020</span>
             </div>
           </div>
-          <div class="ci-item">
-            <div class="ci-icon">📧</div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
             <div>
-              <h4>Email</h4>
-              <p><a href="mailto:contact@atreyasofttech.in">contact@atreyasofttech.in</a></p>
+              <strong>Email</strong>
+              <span>hello@atreyasofttech.com</span>
             </div>
           </div>
-          <div class="ci-item">
-            <div class="ci-icon">📞</div>
-            <div>
-              <h4>Phone</h4>
-              <p><a href="tel:+918792507355">+91 87925 07355</a></p>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.12 6.12l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
-          </div>
-          <div class="ci-item">
-            <div class="ci-icon">🎓</div>
             <div>
-              <h4>College Students</h4>
-              <p>Reach out for a <strong>free 30-minute</strong> project consultation call!</p>
+              <strong>Phone</strong>
+              <span>+91 87925 07355</span>
             </div>
-          </div>
-          <div class="ci-socials">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="social-btn">LinkedIn</a>
-            <a href="https://www.xing.com" target="_blank" rel="noopener" class="social-btn">Xing</a>
           </div>
         </div>
+      </div>
+
+      <div class="contact-right">
         <form class="contact-form" id="contactForm">
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" placeholder="John Doe" required />
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Arjun" required />
             </div>
             <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" placeholder="john@company.com" required />
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="type">I am a</label>
-              <select id="type" style="width:100%;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:12px 16px;color:var(--text);font-family:var(--font);font-size:0.9rem;outline:none;">
-                <option value="">Select...</option>
-                <option value="business">Business / Startup</option>
-                <option value="student">College Student</option>
-                <option value="enterprise">Enterprise</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" placeholder="Project Inquiry / AI Agent / College Project" />
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Sharma" required />
             </div>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Tell us about your project or what you need help with..." required></textarea>
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" placeholder="arjun@company.com" required />
           </div>
-          <button type="submit" class="btn-primary full-width">Send Message →</button>
-          <p class="form-note">We typically respond within 24 hours. Students get a free consultation call!</p>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your Company Name" />
+          </div>
+          <div class="form-group">
+            <label for="service">What do you need?</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="custom-app">Custom Application Development</option>
+              <option value="web">Web Platform</option>
+              <option value="mobile">Mobile App</option>
+              <option value="ai">AI & Machine Learning</option>
+              <option value="cloud">Cloud Engineering</option>
+              <option value="enterprise">Enterprise Solution</option>
+              <option value="consulting">Technology Consulting</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe what you're building, your timeline, and any specific challenges..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p class="form-note">We typically respond within one business day.</p>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
+    <div class="footer-container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="#" class="logo">
-            <img src="logo.avif" alt="Atreya Soft-Tech" class="logo-img" />
-          </a>
-          <p>ಆತ್ರೇಯ ಸಾಫ್ಟ್ - ಟೆಕ್</p>
-          <p class="footer-tagline">"True Empowerment" · "Evolution Made Easy"</p>
+          <span class="footer-logo-text">Atreya SoftTech</span>
+          <p class="footer-tagline">Intelligent software for ambitious businesses.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="footer-social" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="#" class="footer-social" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+          </div>
         </div>
-        <div class="footer-links-group">
-          <h4>Company</h4>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#why-us">Why Us</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-links-group">
-          <h4>Offerings</h4>
-          <a href="#agentic">Agentic AI</a>
-          <a href="#services">Custom Software</a>
-          <a href="#services">QA & Testing</a>
-          <a href="#college">College Projects</a>
-        </div>
-        <div class="footer-links-group">
-          <h4>Connect</h4>
-          <a href="mailto:contact@atreyasofttech.in">Email Us</a>
-          <a href="tel:+918792507355">Call Us</a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://www.xing.com" target="_blank" rel="noopener">Xing</a>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#services">Custom Applications</a></li>
+              <li><a href="#services">Web Platforms</a></li>
+              <li><a href="#services">Mobile Apps</a></li>
+              <li><a href="#services">AI & Automation</a></li>
+              <li><a href="#services">Cloud Engineering</a></li>
+              <li><a href="#services">Enterprise Solutions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <ul>
+              <li><a href="mailto:hello@atreyasofttech.com">hello@atreyasofttech.com</a></li>
+              <li><span>322, 11th Main, 1st Stage</span></li>
+              <li><span>Brindavan Extension, Mysore 570020</span></li>
+            </ul>
+          </div>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>© 2025 Atreya Soft-Tech. All rights reserved. · Mysuru, Karnataka, India</p>
-        <p>contact@atreyasofttech.in · +91 87925 07355</p>
+        <span>&copy; 2026 Atreya SoftTech Pvt. Ltd. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="script.js?v=2"></script>
+  <!-- Floating Actions -->
+  <div class="fab-stack">
+    <a href="https://wa.me/918792507355" target="_blank" rel="noopener" class="fab fab-whatsapp" aria-label="Chat on WhatsApp">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L.057 23.492a.5.5 0 0 0 .614.614l5.764-1.463A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.944 9.944 0 0 1-5.126-1.42l-.368-.218-3.814.968.99-3.718-.24-.382A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+      </svg>
+    </a>
+    <button class="fab fab-top" id="fabTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
